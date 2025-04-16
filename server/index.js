@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(
   cors({
-    origin:'*',
+    origin:['*','https://mern-task-management-sand.vercel.app'],
   })
 );
 app.use(express.urlencoded({ extended: true }));
